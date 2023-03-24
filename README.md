@@ -33,7 +33,8 @@ showDialog(
 ```
 Output
 
-![Example 1](https://github.com/OmarMach/clean_dialog/blob/main/doc/exp.png?raw=true | width=100)
-![Example 2](https://github.com/OmarMach/clean_dialog/blob/main/doc/exp2.png?raw=true | width=100)
+<img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp.png" width="48" alt="Example 1">
+<img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp2.png" width="48" alt="Example 2">
+
 
 
