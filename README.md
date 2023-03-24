@@ -4,7 +4,7 @@ A clean and minimalist dialog Supports null-safety and Flutter 3
 
 ## Features
 
-- Customisable
+- Customizable
 - Lightweight 
 
 ## Usage
