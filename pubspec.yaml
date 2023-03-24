@@ -1,6 +1,6 @@
 name: clean_dialog
-description: A clean and minimalist dialog box for Flutter apps.
-version: 0.0.14
+description: A clean and minimalist dialog box for Flutter apps base on Material Dialog that is very customizable.
+version: 0.0.15
 homepage: https://github.com/OmarMach/clean_dialog
 
 environment:

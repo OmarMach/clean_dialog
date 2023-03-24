@@ -21,7 +21,9 @@ class CleanDialog extends StatelessWidget {
   final String title, content;
   final List<CleanDialogActionButtons> actions;
 
-  List<CleanDialogActionButtons> _buildStyledActionButtons() => actions.map((e) => e.copyWith(textColor: e.textColor ?? backgroundColor)).toList();
+  List<CleanDialogActionButtons> _buildStyledActionButtons() => actions
+      .map((e) => e.copyWith(textColor: e.textColor ?? backgroundColor))
+      .toList();
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +49,9 @@ class CleanDialog extends StatelessWidget {
                       child: Text(
                         title,
                         textAlign: titleTextAlign ?? TextAlign.center,
-                        style: titleTextStyle ?? const TextStyle(fontWeight: FontWeight.bold, fontSize: 23),
+                        style: titleTextStyle ??
+                            const TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 23),
                       ),
                     ),
                     Text(
@@ -77,7 +81,11 @@ class CleanDialog extends StatelessWidget {
 }
 
 class CleanDialogActionButtons extends StatelessWidget {
-  const CleanDialogActionButtons({super.key, required this.actionTitle, required this.onPressed, this.textColor});
+  const CleanDialogActionButtons(
+      {super.key,
+      required this.actionTitle,
+      required this.onPressed,
+      this.textColor});
 
   final String actionTitle;
   final VoidCallback onPressed;
@@ -105,7 +113,8 @@ class CleanDialogActionButtons extends StatelessWidget {
         child: Text(
           actionTitle,
           textAlign: TextAlign.center,
-          style: TextStyle(color: textColor ?? Colors.blue, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: textColor ?? Colors.blue, fontWeight: FontWeight.bold),
         ),
       ),
     );

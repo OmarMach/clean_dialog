@@ -12,3 +12,7 @@
 ## 0.0.14
 
 * Fix readme2.
+
+## 0.0.15
+
+* Fix format/License.

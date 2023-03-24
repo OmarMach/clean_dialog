@@ -37,10 +37,15 @@ class MainScreen extends StatelessWidget {
                     title: 'Success',
                     content: 'You have successfully updated your information.',
                     backgroundColor: const Color(0XFF27ae61),
-                    titleTextStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
-                    contentTextStyle: const TextStyle(fontSize: 16, color: Colors.white),
+                    titleTextStyle: const TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                    contentTextStyle:
+                        const TextStyle(fontSize: 16, color: Colors.white),
                     actions: [
-                      CleanDialogActionButtons(actionTitle: 'Accept', onPressed: () {}),
+                      CleanDialogActionButtons(
+                          actionTitle: 'Accept', onPressed: () {}),
                       CleanDialogActionButtons(
                         actionTitle: 'Cancel',
                         onPressed: () => Navigator.pop(context),
@@ -60,8 +65,12 @@ class MainScreen extends StatelessWidget {
                     title: 'Error',
                     content: 'We were not able to update your information.',
                     backgroundColor: const Color(0XFFbe3a2c),
-                    titleTextStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
-                    contentTextStyle: const TextStyle(fontSize: 16, color: Colors.white),
+                    titleTextStyle: const TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                    contentTextStyle:
+                        const TextStyle(fontSize: 16, color: Colors.white),
                     actions: [
                       CleanDialogActionButtons(
                         actionTitle: 'Cancel',
