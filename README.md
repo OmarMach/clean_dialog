@@ -8,7 +8,7 @@ A Flutter package that creates a clean and minimalist dialog Supports null-safet
 ## Getting started 
 
 
-```console 
+```shell 
 flutter pub get clean_dialog
 ```
 
