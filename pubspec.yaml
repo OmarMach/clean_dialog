@@ -1,7 +1,7 @@
 name: clean_dialog
-description: A new Flutter package project.
+description: A clean and minimalist dialog box for Flutter apps.
 version: 0.0.1
-homepage:
+homepage: https://github.com/OmarMach/clean_dialog
 
 environment:
   sdk: '>=2.19.4 <3.0.0'
