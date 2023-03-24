@@ -1,6 +1,4 @@
-clean_dialog
-
-A clean and minimalist dialog Supports null-safety and Flutter 3
+A Flutter package that creates a clean and minimalist dialog Supports null-safety and Flutter 3
 
 ## Features
 
@@ -10,7 +8,7 @@ A clean and minimalist dialog Supports null-safety and Flutter 3
 ## Usage
 
 Sample Alert
-```
+```dart
 showDialog(
     context: context,
     builder: (context) => CleanDialog(
@@ -35,5 +33,7 @@ showDialog(
 ```
 Output
 
-![errorexample](.github/exp.jpg)
+![Example 1](https://github.com/OmarMach/clean_dialog/doc/exp.jpg?raw=true)
+![Example 2](https://github.com/OmarMach/clean_dialog/doc/exp2.jpg?raw=true)
+
 
