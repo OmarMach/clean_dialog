@@ -7,14 +7,19 @@ A Flutter package that creates a clean and minimalist dialog Supports null-safet
 
 ## Getting started 
 
+- Install the package through this command 
 
-```shell 
+```bash 
 flutter pub get clean_dialog
 ```
+
+- Import the package inside the file you desire to include the dialog.
 
 ```dart 
 import 'package:clean_dialog/clean_dialog.dart';
 ```
+
+- Add this line to the onPress function of the desired Button or gesture detector.
 
 ```dart
 showDialog(
@@ -39,7 +44,7 @@ showDialog(
     ),
 );
 ```
-Output
+##  Output
 
 <img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp.png" width="400" alt="Example 1">
 <img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp2.png" width="400" alt="Example 2">
