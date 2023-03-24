@@ -35,5 +35,5 @@ showDialog(
 ```
 Output
 
-|![errorexample](.github/exp.jpg)
+![errorexample](.github/exp.jpg)
 
