@@ -5,9 +5,17 @@ A Flutter package that creates a clean and minimalist dialog Supports null-safet
 - Customizable
 - Lightweight 
 
-## Usage
+## Getting started 
 
-Sample Alert
+
+```console 
+flutter pub get clean_dialog
+```
+
+```dart 
+import 'package:clean_dialog/clean_dialog.dart';
+```
+
 ```dart
 showDialog(
     context: context,
