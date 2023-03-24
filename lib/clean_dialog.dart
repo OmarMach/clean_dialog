@@ -2,6 +2,28 @@ library clean_dialog;
 
 import 'package:flutter/material.dart';
 
+/// A Clean and minimalist Flutter Dialog
+/***
+ * CleanDialog(
+    title: 'Error',
+    content: 'We were not able to update your information.',
+    backgroundColor: const Color(0XFFbe3a2c),
+    titleTextStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
+    contentTextStyle: const TextStyle(fontSize: 16, color: Colors.white),
+    actions: [
+        CleanDialogActionButtons(
+            actionTitle: 'Cancel',
+            onPressed: () => Navigator.pop(context),
+        ),
+        CleanDialogActionButtons(
+            actionTitle: 'Try again',
+            textColor: const Color(0XFF27ae61),
+            onPressed: () {},
+        ),
+    ],
+    ),
+ */
+///
 class CleanDialog extends StatelessWidget {
   const CleanDialog({
     super.key,
@@ -15,12 +37,31 @@ class CleanDialog extends StatelessWidget {
     this.contentTextAlign,
   });
 
+  /// Color to be displayed in the background of the Dialog
   final Color backgroundColor;
-  final TextStyle? titleTextStyle, contentTextStyle;
-  final TextAlign? titleTextAlign, contentTextAlign;
-  final String title, content;
+
+  /// The String to be displayed as title for the Dialog
+  final String title;
+
+  /// The dialog's text content
+  final String content;
+
+  /// The list of Buttons that will be displayed in the Dialog
   final List<CleanDialogActionButtons> actions;
 
+  /// The title text alignement default value is TextAlign.Center
+  final TextAlign? titleTextAlign;
+
+  /// The content text alignement default value is TextAlign.Center
+  final TextAlign? contentTextAlign;
+
+  /// The content text style default value is TextStyle(fontWeight: FontWeight.bold, fontSize: 23)
+  final TextStyle? titleTextStyle;
+
+  /// The content text style default value is TextStyle(fontSize: 16)
+  final TextStyle? contentTextStyle;
+
+  /// Used to transfer backgroundColor to buttons textColor.
   List<CleanDialogActionButtons> _buildStyledActionButtons() => actions
       .map((e) => e.copyWith(textColor: e.textColor ?? backgroundColor))
       .toList();
@@ -87,8 +128,13 @@ class CleanDialogActionButtons extends StatelessWidget {
       required this.onPressed,
       this.textColor});
 
+  /// The String text that will be displayed for the action.
   final String actionTitle;
+
+  /// The action that will be executed once the button tapped.
   final VoidCallback onPressed;
+
+  /// Optional Color that will override the default parent `backgoundColor`.
   final Color? textColor;
 
   CleanDialogActionButtons copyWith({

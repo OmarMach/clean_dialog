@@ -16,3 +16,7 @@
 ## 0.0.15
 
 * Fix format/License.
+
+## 0.0.16
+
+* Added documentation.
