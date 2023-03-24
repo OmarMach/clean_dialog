@@ -1,39 +1,39 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+clean_dialog
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A clean and minimalist dialog Supports null-safety and Flutter 3
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- Customisable
+- Lightweight 
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+Sample Alert
 ```
+showDialog(
+    context: context,
+    builder: (context) => CleanDialog(
+    title: 'Error',
+    content: 'We were not able to update your information.',
+    backgroundColor: const Color(0XFFbe3a2c),
+    titleTextStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
+    contentTextStyle: const TextStyle(fontSize: 16, color: Colors.white),
+    actions: [
+        CleanDialogActionButtons(
+            actionTitle: 'Cancel',
+            onPressed: () => Navigator.pop(context),
+        ),
+        CleanDialogActionButtons(
+            actionTitle: 'Try again',
+            textColor: const Color(0XFF27ae61),
+            onPressed: () {},
+        ),
+    ],
+    ),
+);
+```
+Output
 
-## Additional information
+|![errorexample](.github/exp.jpg)
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
