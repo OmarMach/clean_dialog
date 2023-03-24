@@ -46,8 +46,8 @@ showDialog(
 ```
 ##  Output
 
-<img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp.png" width="400" alt="Example 1">
-<img src="https://github.com/OmarMach/clean_dialog/blob/main/doc/exp2.png" width="400" alt="Example 2">
+<img src="https://github.com/OmarMach/clean_dialog/raw/main/doc/exp.png" width="400" alt="Example 1">
+<img src="https://github.com/OmarMach/clean_dialog/raw/main/doc/exp2.png" width="400" alt="Example 2">
 
 
 
